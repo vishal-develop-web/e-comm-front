@@ -1,0 +1,41 @@
+
+  .conta_iner {
+    max-width: 800px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .btn:active {
+    transform: translateY(1px);
+  }
+  
+ 

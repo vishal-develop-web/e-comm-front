@@ -1,0 +1,117 @@
+<nav class="side-container">
+  <div class="side_bar card" [ngClass]="{ 'hidden-side': !visibleSidebar }">
+    <div class="side_content">
+      <h3>EComm Service</h3>
+      <span class="text-center"
+        ><i class="fa-solid fa-circle" style="color: #16c533"></i> online</span
+      >
+      <div class="nav_link">
+        <ul class="list_item">
+          <div class="link_item" [routerLink]="['./dashboard']">
+            <div class="main_link">
+              <div>
+                <i class="fa-regular fa-hand-point-right"></i>
+                <span class="link_t">Dashboard</span>
+              </div>
+              <i class="fa-solid fa-chevron-down fa-rotate-270"></i>
+            </div>
+          </div>
+
+          <div class="link_item" [routerLink]="['./order']">
+            <div class="main_link">
+              <div>
+                <i class="fa-regular fa-hand-point-right"></i>
+                <span class="link_t">Orders</span>
+              </div>
+              <i class="fa-solid fa-chevron-down fa-rotate-270"></i>
+            </div>
+            <div class="sub_link">
+              <ul>
+                <li>Cancel</li>
+                <li>Pending</li>
+                <li>Completed</li>
+                <li>In Progress</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="link_item" [routerLink]="['./product']">
+            <div class="main_link">
+              <div>
+                <i class="fa-regular fa-hand-point-right"></i>
+                <span class="link_t">Products</span>
+              </div>
+              <i class="fa-solid fa-chevron-down fa-rotate-270"></i>
+            </div>
+          </div>
+
+          <div class="link_item" [routerLink]="['./salesinfo']">
+            <div class="main_link">
+              <div>
+                <i class="fa-regular fa-hand-point-right"></i>
+                <span class="link_t">Sales Info</span>
+              </div>
+              <i class="fa-solid fa-chevron-down fa-rotate-270"></i>
+            </div>
+          </div>
+
+          <div class="link_item" [routerLink]="['./customer']">
+            <div class="main_link">
+              <div>
+                <i class="fa-regular fa-hand-point-right"></i>
+                <span class="link_t">Customers</span>
+              </div>
+              <i class="fa-solid fa-chevron-down fa-rotate-270"></i>
+            </div>
+          </div>
+
+          <div class="link_item" [routerLink]="['./invoice']">
+            <div class="main_link">
+              <div>
+                <i class="fa-regular fa-hand-point-right"></i>
+                <span class="link_t">Invoices</span>
+              </div>
+              <i class="fa-solid fa-chevron-down fa-rotate-270"></i>
+            </div>
+          </div>
+
+          <div class="link_item" [routerLink]="['./setting']">
+            <div class="main_link">
+              <div>
+                <i class="fa-regular fa-hand-point-right"></i>
+                <span class="link_t">Setting</span>
+              </div>
+              <i class="fa-solid fa-chevron-down fa-rotate-270"></i>
+            </div>
+          </div>
+          <div class="link_item" [routerLink]="['./profile']">
+            <div class="main_link">
+              <div>
+                <i class="fa-regular fa-hand-point-right"></i>
+                <span class="link_t">Profile</span>
+              </div>
+              <i class="fa-solid fa-chevron-down fa-rotate-270"></i>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="side_bottom">
+      <span>App Version 1.0</span>
+    </div>
+  </div>
+  <div class="conte_nt">
+    <div class="header-content">
+      <i class="fa-solid fa-bars" (click)="toggleSidebar()"></i>
+      <!-- <button (click)="toggleSidebar()" class="btn bg-success">Toggler</button> -->
+      <div class="admin_info">
+        <span> Welcome , Vishal Sharma </span
+        ><i class="fa-solid fa-power-off"></i>
+      </div>
+    </div>
+    <div class="main_content">
+      <!-- <ng-content> </ng-content> -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</nav>
