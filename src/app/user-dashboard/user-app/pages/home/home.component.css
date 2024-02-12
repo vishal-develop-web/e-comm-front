@@ -1,0 +1,9 @@
+.product_container{
+    width: 100%;
+    padding: 25px;
+    margin: 10px;
+    background-image: url('https://images.unsplash.com/photo-1564221996129-b7a5ab7166e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU0fHxlJTIwY29tbWVyY2V8ZW58MHx8MHx8fDA%3D');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+}

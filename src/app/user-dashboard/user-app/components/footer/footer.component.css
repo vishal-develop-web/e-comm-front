@@ -1,0 +1,47 @@
+/* Footer container */
+.footer_container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #030303;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Footer section */
+  .footer_container > div {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  /* Footer section title */
+  .footer_container h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Footer section list */
+  .footer_container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Footer section list items */
+  .footer_container li {
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer section list items hover effect */
+  .footer_container li:hover {
+    text-decoration: underline;
+  }
+  .dev_info{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+  
+}
+.dev_info h5{
+    text-shadow: 1pzx 1px 2px 1px white;
+}

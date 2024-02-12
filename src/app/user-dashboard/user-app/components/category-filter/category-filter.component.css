@@ -1,0 +1,22 @@
+.cat_container{
+    display: flex !important;
+
+    padding: 15px;
+    justify-content: space-around;
+    overflow-x: auto;
+    width: 95%;
+    box-shadow: 0px 1px 13px 2px #d3d0ca;
+    margin:  10px auto 0px;
+}
+.btn_div button{
+    padding: 3px  10px;
+    border: none;
+    border-radius: 35px ;
+    background-color: rgb(216, 92, 44);
+    font-weight: 400;
+    color: white;
+}
+
+.btn_div button:hover{
+    background-color: black;
+}

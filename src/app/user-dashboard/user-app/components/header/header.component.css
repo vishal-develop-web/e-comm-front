@@ -1,0 +1,49 @@
+.nav_bar{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 31px 1px rgb(223, 221, 221);
+    height: auto;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    height: 90px;
+}
+.nav_link{
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+.nav_link ul{
+    margin-top: 13px;
+    display: flex;
+    /* background-color: cyan; */
+    margin-right: 4px;
+    /* background-color: blue; */
+   
+    
+}
+.nav_link ul li {
+    margin: 0px 23px;
+    list-style: none;
+    font-size: 23px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.user_detail{
+    display: flex;
+    background-color: gray;
+}
+.hea_der{
+    display: flex;
+}
+
+.nav_link ul li:hover{
+
+/* scale: 1.025; */
+
+transition: 0.1s ease;
+border-bottom: 1px black solid ;
+text-shadow: 1px 1px 2px gray;
+/* scale: 1.027; */
+
+}

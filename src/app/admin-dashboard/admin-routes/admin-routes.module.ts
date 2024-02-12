@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 
-import { AdminRoutesRoutingModule } from './admin-routes-routing.module'
 import { RouterModule, Routes } from '@angular/router'
 import { AdminDashboardComponent } from '../admin-app/pages/admin-dashboard/admin-dashboard.component'
 import { CustomerComponent } from '../admin-app/pages/customer/customer.component'
@@ -49,11 +48,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    AdminRoutesRoutingModule,
-    RouterModule.forChild(routes)
-  ],
+  imports: [CommonModule, RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class AdminRoutesModule {}
