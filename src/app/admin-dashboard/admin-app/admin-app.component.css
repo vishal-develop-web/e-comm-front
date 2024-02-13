@@ -1,5 +1,5 @@
 .admin_home{
-    background-color: blanchedalmond;
+    
     display: flex;
     flex-direction: row;
 }
@@ -19,5 +19,9 @@
 }
 .full_width{
     width: 100%;
+}
+
+.admin_content_container{
+    background-color:#00285d !important;;
 }
 

@@ -3,7 +3,8 @@
     display: flex;   
 }
 .side_bar{
-    background: #39fbff;
+    background-color:#031123 !important;;
+    color: white;
     height: 100vh;
     width: 250px;
     border-radius: 0px;
@@ -29,7 +30,8 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;align-items: center;
-    background: #39fbff;
+    background-color:#031123 !important;;
+    color: white;
 }
 .fa-bars::before, .fa-navicon::before {
    
@@ -41,6 +43,8 @@
 .main_content{
     padding: 10px;
     margin: 5px;
+
+    
 }
 
 .conte_nt{
@@ -79,7 +83,7 @@ margin-left: 15px;
     ;
 }
 .link_item{
-border-bottom: 2px white solid;
+
 margin: 0px;
 }
 
@@ -127,7 +131,7 @@ margin: 0px;
     /* border: 1px solid black; */
     /* border-bottom: 1px white solid; */
 
-    background-color: rgb(40, 238, 212) !important;
+    background-color: #00285d !important;
     /* transition: 0.1s ease-in ; */
     /* scale: 1.024; */
   ;

@@ -1,1 +1,21 @@
-<p>products works!</p>
+<div class="p_container">
+  <div class="p_header">
+    <div class="selected_val">
+      <h4>{{ selectedVal }}</h4>
+    </div>
+    <mat-form-field class="select_f">
+      <mat-label class="sel_label">Select Product View</mat-label>
+      <mat-select
+        [(value)]="selected"
+        class="sel_val"
+        (selectionChange)="handleSelectChange($event)"
+      >
+        <mat-option value="option1">Top Products</mat-option>
+        <mat-option value="option2">Products Grid</mat-option>
+        <mat-option value="option3">Products Management Table</mat-option>
+        <mat-option value="option4">Products Add</mat-option>
+        <mat-option value="option4">Banners</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
