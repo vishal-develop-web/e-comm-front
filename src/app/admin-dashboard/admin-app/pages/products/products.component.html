@@ -1,21 +1,32 @@
 <div class="p_container">
   <div class="p_header">
-    <div class="selected_val">
+    <div class="selected_val bg_dark_blue">
       <h4>{{ selectedVal }}</h4>
     </div>
-    <mat-form-field class="select_f">
-      <mat-label class="sel_label">Select Product View</mat-label>
-      <mat-select
-        [(value)]="selected"
-        class="sel_val"
-        (selectionChange)="handleSelectChange($event)"
-      >
-        <mat-option value="option1">Top Products</mat-option>
-        <mat-option value="option2">Products Grid</mat-option>
-        <mat-option value="option3">Products Management Table</mat-option>
-        <mat-option value="option4">Products Add</mat-option>
-        <mat-option value="option4">Banners</mat-option>
-      </mat-select>
-    </mat-form-field>
+    <div class="sel_con">
+      <mat-form-field class="select_f">
+        <span class="select_label">Select Product View</span>
+        <mat-select
+          class="sel_val d-none"
+          (selectionChange)="handleSelectChange($event)"
+        >
+          <mat-option value="option1">Top Products</mat-option>
+          <mat-option value="option2">Products Grid</mat-option>
+          <mat-option value="option3">Products Management Table</mat-option>
+          <mat-option value="option4">Products Add</mat-option>
+          <mat-option value="option5">Banners</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
   </div>
+
+  <ng-container [ngSwitch]="selected">
+    <app-top-product-view *ngSwitchCase="'option1'"></app-top-product-view>
+    <app-grid-view *ngSwitchCase="'option2'"></app-grid-view>
+    <app-product-management-view
+      *ngSwitchCase="'option3'"
+    ></app-product-management-view>
+    <app-product-add-view *ngSwitchCase="'option4'"></app-product-add-view>
+    <app-home-banners *ngSwitchCase="'option5'"></app-home-banners>
+  </ng-container>
 </div>
