@@ -1,3 +1,10 @@
+<!-- <button (click)="sidebarToggle()">Toggle</button> -->
 <div class="admin_content_container">
-  <app-sidebar> </app-sidebar>
+  <div class="side_bar" [ngClass]="{ show_side: showSidebar }">
+    <app-sidebar> </app-sidebar>
+  </div>
+  <div class="main_content">
+    <app-header [sidebarToggle]="sidebarToggle.bind(this)"></app-header>
+    <router-outlet></router-outlet>
+  </div>
 </div>

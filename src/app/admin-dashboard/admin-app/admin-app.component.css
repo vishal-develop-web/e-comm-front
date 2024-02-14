@@ -1,27 +1,43 @@
-.admin_home{
-    
-    display: flex;
-    flex-direction: row;
-}
-.admin_side{
-    background-color: gray;
-    width: 250px;
-    transition: width 0.3s ease;
-}
-.admin_side.hidden {
-   
-  width: 0px;
-}
-.admin_content{
-    /* width: 100% ; */
-    background-color: green;
-    transition: width 0.3s ease;
-}
-.full_width{
-    width: 100%;
-}
-
 .admin_content_container{
-    background-color:#00285d !important;;
+    display: flex;
 }
+.main_content{
+    flex-grow: 1;
+}
+.side_bar{
+    /* height: 100% !important; */
+    min-height: 100vh;
+    height: 100vh;
+}
+.side_bar {
+     /* Initial width of sidebar */
+    flex: 0 0 auto; /* Prevent sidebar from growing or shrinking */
+    transition: transform 0.3s ease; /* Apply transition to width property */
+    overflow: hidden; /* Hide content overflow */
+  }
+  
+  .main_content {
+    flex-grow: 1;
+  }
+  
+  .show_side {
+    /* width: 250px; Width of the expanded sidebar */
+    transform:translateX(-258px);
+    width: 0px;
+  }
 
+@media screen and (max-width:768px) {
+
+    .side_bar {
+         /* Occupy full width */
+        position: absolute;
+        z-index: 999 !important;
+         /* Increase z-index to bring sidebar above main content */
+    }
+    .main_content{
+      width: 100%;
+      
+      /* background-color: black; */
+    }
+    
+}

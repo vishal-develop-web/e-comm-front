@@ -10,6 +10,7 @@ import { SettingComponent } from '../admin-app/pages/setting/setting.component'
 import { ProfileComponent } from '../admin-app/pages/profile/profile.component'
 import { OrderdetailComponent } from '../admin-app/pages/orderdetail/orderdetail.component'
 import { SalesinfoComponent } from '../admin-app/pages/salesinfo/salesinfo.component'
+import { PendingOrderComponent } from '../admin-app/pages/orderdetail/pending-order/pending-order.component'
 
 const routes: Routes = [
   {
@@ -38,7 +39,13 @@ const routes: Routes = [
   },
   {
     path: 'order',
-    component: OrderdetailComponent
+    component: OrderdetailComponent,
+    children: [
+      {
+        path: 'pending',
+        component: PendingOrderComponent
+      }
+    ]
   },
   {
     path: 'salesinfo',
